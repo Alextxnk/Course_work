@@ -1,0 +1,35 @@
+.navbar {
+  display: flex; /*df*/
+  align-items: center; /*чтоб были по середине*/
+  padding-top: 15px; /*pt отступ сверху*/
+  padding-bottom: 15px;
+}
+.navbar-brand {
+  color: white;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+.navbar-brand:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(212, 190, 190);
+  transition: width 0.5s;
+}
+
+.navbar-brand:hover:after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  background-color: #0d6efd;
+  transition: width 0.5s;
+}
